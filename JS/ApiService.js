@@ -34,6 +34,7 @@ class ApiService {
 
     /**
      * Fetch full description for a specific book
+     * @param {string} bookKey - e.g., /works/0L8193508W
      */
     async getBookDetails(bookKey) {
         try {
