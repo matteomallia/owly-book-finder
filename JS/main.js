@@ -7,7 +7,7 @@ import { BookFactory } from './bookFactory.js';
 import { translations } from './i18n.js';
 
 // 1. STATE MANAGEMENT
-// Persistent language selection using Web Storage API [cite: 2324]
+// Persistent language selection using Web Storage API
 let currentLang = localStorage.getItem('owly_lang') || 'en';
 
 // 2. DOM ELEMENTS SELECTION
@@ -34,7 +34,7 @@ const elements = {
  */
 const updateLanguage = (lang) => {
     currentLang = lang;
-    localStorage.setItem('owly_lang', lang); // Store preference [cite: 2351]
+    localStorage.setItem('owly_lang', lang); // Store preference
     
     const t = translations[lang];
     
@@ -59,7 +59,7 @@ const closeModal = () => {
 };
 
 /**
- * Renders book cards using Factory Pattern to standardize data[cite: 2530].
+ * Renders book cards using Factory Pattern to standardize data.
  */
 const renderBooks = (books) => {
     elements.resultsContainer.innerHTML = '';
@@ -97,7 +97,7 @@ const renderBooks = (books) => {
 };
 
 /**
- * Executes second API call for specific book details[cite: 83].
+ * Executes second API call for specific book details.
  */
 const showBookDescription = async (bookKey) => {
     toggleLoading(true);
@@ -119,7 +119,7 @@ const showBookDescription = async (bookKey) => {
 };
 
 /**
- * Main search handler using async/await for network requests[cite: 1755].
+ * Main search handler using async/await for network requests.
  */
 const handleSearch = async () => {
     const category = elements.categorySelect.value;
