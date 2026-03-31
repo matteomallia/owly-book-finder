@@ -34,7 +34,6 @@ class ApiService {
 
     /**
      * Fetch full description for a specific book
-     * @param {string} bookKey - e.g., /works/OL8193508W
      */
     async getBookDetails(bookKey) {
         try {
@@ -48,6 +47,5 @@ class ApiService {
 }
 
 // Singleton: We export an instance, not the class itself.
-// ES Modules will cache this instance[cite: 2749, 2765].
 const apiServiceInstance = new ApiService();
 export default apiServiceInstance;
