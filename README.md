@@ -1,7 +1,7 @@
 # Owly Book Finder 🦉📚
 **A JavaScript Advanced Project for the Owly Educational Platform**
 
-Developed by: **Matteo Mallia** Live Demo: [Link al tuo sito su Netlify]
+Developed by: **Matteo Mallia** 
 
 ---
 
