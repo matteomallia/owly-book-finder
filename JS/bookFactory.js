@@ -17,7 +17,7 @@ export const BookFactory = {
             title: rawData.title || 'Untitled',
             
             // Author handling: API returns an array of objects. 
-            // We transform it into a single readable string. [cite: 22, 282]
+            // We transform it into a single readable string.
             authors: rawData.authors 
                 ? rawData.authors.map(author => author.name).join(', ') 
                 : 'Unknown Author',
