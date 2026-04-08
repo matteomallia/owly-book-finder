@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Owly Book Finder - Fun with Books!" />
+    <meta property="og:description" content="A playful way for children to discover books via Open Library API." />
+    <meta property="og:image" content="/assets/og-preview-CMvPjB4H.png" />
+
+    <title>Owly | Book Finder</title>
+  <script type="module" crossorigin src="/assets/index-CBvYW0Sg.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CkqzEXuU.css">
+</head>
+<body>
+    <div id="app">
+        <nav class="language-switcher">
+            <button id="lang-en" class="lang-btn active">EN</button>
+            <button id="lang-it" class="lang-btn">IT</button>
+        </nav>
+
+        <header>
+            <img src="/assets/logo-BsB50DpW.png" alt="Owly mascot" class="logo" />
+            <h1 id="ui-title">Owly Book Finder</h1>
+            <p id="ui-subtitle">Expanding horizons through reading.</p>
+        </header>
+
+        <main class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="playful-input" 
+                    placeholder="Search for a topic..." 
+                    autocomplete="off"
+                >
+                
+                <button id="search-btn" class="search-btn-playful" disabled>
+                    <span id="ui-search-text">Search</span> 🔍
+                </button>
+            </div>
+        </main>
+
+        <div id="loader" class="loader-overlay hidden">
+            <div class="spinner"></div>
+            <p id="ui-loading">Searching for books...</p>
+        </div>
+
+        <section id="results-container" class="results-grid"></section>
+
+        <div id="book-modal" class="modal hidden">
+            <div class="modal-content">
+                <span id="close-modal" class="close">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
