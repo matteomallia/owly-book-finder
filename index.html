@@ -7,7 +7,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Owly Book Finder - Fun with Books!" />
     <meta property="og:description" content="A playful way for children to discover books via Open Library API." />
-    <meta property="og:image" content="/IMG/og-preview.png" />
+    <meta property="og:image" content="./IMG/og-preview.png" />
 
     <title>Owly | Book Finder</title>
     <link rel="stylesheet" href="./CSS/style.css" />
@@ -27,15 +27,15 @@
 
         <main class="search-section">
             <div class="search-box">
-                <select id="category-select" class="playful-input">
-                    <option value="" disabled selected id="ui-select-label">Select a category...</option>
-                    <option value="fantasy">Fantasy</option>
-                    <option value="science_fiction">Science Fiction</option>
-                    <option value="history">History</option>
-                    <option value="horror">Horror</option>
-                    <option value="biography">Biography</option>
-                </select>
-                <button id="search-btn" class="search-btn-playful">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="playful-input" 
+                    placeholder="Search for a topic..." 
+                    autocomplete="off"
+                >
+                
+                <button id="search-btn" class="search-btn-playful" disabled>
                     <span id="ui-search-text">Search</span> 🔍
                 </button>
             </div>
