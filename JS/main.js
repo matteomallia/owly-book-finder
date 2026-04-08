@@ -1,6 +1,5 @@
 /**
  * main.js - Core Controller for Owly Book Finder
- * Updated to meet Coach Marco Amilcari's feedback:
  * - Free search input instead of select
  * - Search button validation (disabled state)
  * - Full clickable cards
